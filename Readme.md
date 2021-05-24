@@ -10,3 +10,28 @@ and can be spined up running `npm run json:server` inside of root folder
 
 So that is how we run two servers in parallel 
 
+to send some simple GraphQL request go to `localhost:4000/graphql`
+
+and inside of `GraphiQL` - `is a tool that helps building queries in dev mode`
+build your query, query in `GraphQL` is always begins with curly brackets
+and hits `Root query` - is entry point to GraphQL
+
+example of queries:
+```
+{
+  user(id: "40") {
+  	firstName
+  }
+}
+```
+
+or 
+```
+{
+  user(id: "40") {
+    firstName
+    age,
+    companyId
+  }
+}
+```
