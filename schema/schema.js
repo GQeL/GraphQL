@@ -13,8 +13,8 @@ const UserType = new GraphQLObjectType({
 		// types have to be imported from grapnql library
 		id: { type: GraphQLString },
 		firstName: { type: GraphQLString },
-		age: { type: GraphQLInt }
-
+		age: { type: GraphQLInt },
+		companyId: { type: GraphQLInt }
 	}
 })
 
